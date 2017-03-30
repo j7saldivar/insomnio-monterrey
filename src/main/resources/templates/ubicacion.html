@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/spring"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/main">
+<head>
+<title>Pagina inicial</title>
+
+<style type="text/css">
+.navbar {
+	margin-bottom: 0;
+	background-color: black;
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #f4511e !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div class="mid-top" layout:fragment="content">
+		
+		<div class="jumbotron">
+			<img alt="" src="http://www.pptbackgrounds.org/uploads/medical-doctor-woman-backgrounds-wallpapers.jpg" width="100%"/>
+		</div>
+		
+		<div class="container">
+			<h1>Insomnio Monterrey</h1>
+		</div>
+
+		<!-- Add Google Maps -->
+		<div class="container">
+		<div id="googleMap" style="height: 400px;"></div>
+		</div>
+		<script>
+			function myMap() {
+				var myCenter = new google.maps.LatLng(25.668576, -100.350337);
+				var mapProp = {
+					center : myCenter,
+					zoom : 15,
+					scrollwheel : false,
+					draggable : false,
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document
+						.getElementById("googleMap"), mapProp);
+				var marker = new google.maps.Marker({
+					position : myCenter
+				});
+				marker.setMap(map);
+			}
+		</script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNAFuZGdhKmdT03F2JAecEWCEGx8BH_uE&amp;callback=myMap"></script>
+
+	</div>
+
+</body>
+</html>

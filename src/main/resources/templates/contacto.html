@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/spring"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/main">
+<head>
+<title>Contacto</title>
+
+<style type="text/css">
+h4 {
+	margin-top: 0px;
+}
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div class="mid-top" layout:fragment="content">
+
+		<br /> <br /> <br /> <br />
+
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-6">
+
+					<h3></h3>
+					<h3>Dirección: Centro Médico Inglés Consultorio #201</h3>
+					<h3>Calle Sertoma 203 Colonia Sertoma</h3>
+					<h3>Monterrey, N.L.</h3>
+
+
+
+				</div>
+
+				<div class="col-sm-6 text-right">
+
+					
+					<h3>Tel. 88 83 85 58</h3>
+					<h3>Cel. 044 812 596 3741</h3>
+					<h3>Correo: dra.rksaldivar@gmail.com</h3>
+				</div>
+			</div>
+
+			<div id="googleMap" style="height: 400px;"></div>
+		</div>
+		<script>
+			function myMap() {
+				var myCenter = new google.maps.LatLng(25.668576, -100.350337);
+				var mapProp = {
+					center : myCenter,
+					zoom : 15,
+					scrollwheel : false,
+					draggable : false,
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document
+						.getElementById("googleMap"), mapProp);
+				var marker = new google.maps.Marker({
+					position : myCenter
+				});
+				marker.setMap(map);
+			}
+		</script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNAFuZGdhKmdT03F2JAecEWCEGx8BH_uE&amp;callback=myMap"></script>
+
+
+
+
+		<div class="container">
+			<hr />
+			<footer class="container-fluid bg-4 text-center">
+				<p>Dra. Ruth Krisel Saldívar Hernández</p>
+			</footer>
+		</div>
+
+
+
+
+
+	</div>
+
+
+</body>
+</html>

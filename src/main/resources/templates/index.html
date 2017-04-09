@@ -9,151 +9,152 @@
 h4 {
 	margin-top: 0px;
 }
+
+.row.equal {
+	overflow: hidden;
+}
+
+.row.equal [class*="col-"] {
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+.row.equal [class="well"] {
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
 </style>
 
 
 </head>
 
 
-<body>
+<body style="background-color: #DDDDDD;">
 
 	<div class="mid-top" layout:fragment="content">
 
-		<br /> <br /> <br /> <br />
-		<div class="container">
+		<br />
+		<br />
+		<br />
+		<br />
 
-			<div class="row">
+
+
+		<div class="container" style="padding:0px;">
+
+			<div class="row equal">
 
 				<div class="col-sm-4">
 					<img class="img-thumbnail" alt="" th:src="@{/images/profile.png}"
 						width="100%" />
+
 				</div>
 				<div class="col-sm-8">
 
-					<h4>Dra. Ruth Krisel Saldívar Hernández</h4>
-					<h4>Cédula Profesional: 7308420</h4>
-					<h4>Cédula de Especialista: 9976116</h4>
-					<h4>Consejo Mexicano de Psiquiatría: 1561234</h4>
+					<div class="well">
+						<h1>
+							<b>Dra. Ruth Krisel Saldívar Hernández</b>
+						</h1>
+
+						<h4>Consejo Mexicano de Psiquiatría: 1561234</h4>
+						<h4>Cédula de Especialista: 9976116</h4>
+						<h4>Cédula Profesional: 7308420</h4>
+						<br />
+						<br />
+						<h4 class="text-justify">Me forme como especialista en
+							psiquiatría en el Instituto Nacional de Psiquiatría "Ramón de la
+							Fuente"​ en la ciudad de México. Posteriormente realicé el alta
+							especialidad en medicina del sueño en el mismo lugar. Tuve un
+							entrenamiento en investigación en el Centro Epidemiológico de
+							Medicina del Sueño de Stanford University. Cuento además con
+							entrenamiento en terapia cognitivo conductual y soy experta en la
+							terapia cognitivo conductal para el manejo del insomnio.
+
+							Actualmente me encuentro brindando consulta de psiquiatría y
+							medicina del sueño en la ciudad de Monterrey, Nuevo León.</h4>
+					</div>
+
 
 				</div>
 
 			</div>
-			<hr />
+		</div>
+
+		<br />
+		<br />
+		<div class="container well" style="">
+
+
 			<div class="row">
 
-				<div class="col-sm-4">
+				<div class="col-sm-4 text-left">
 					<img class="img-thumbnail" alt="" th:src="@{/images/udem.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
 
 					<h4>Médica Cirujana y Partera por la Universidad de Monterrey</h4>
-
 				</div>
 
-			</div>
 
 
+				<div class="col-sm-4 text-left">
 
-
-
-			<hr />
-			<div class="row">
-
-				<div class="col-sm-4">
 					<img class="img-thumbnail" alt=""
-						th:src="@{/images/institutonacional.jpg}" width="100%" />
-				</div>
-				<div class="col-sm-8">
+						th:src="@{/images/institutonacional.png}" width="100%" />
 
-					<h4>Especialización en Psiquiatría en el Instituto Nacional de
+					<h4>Especialidad en Psiquiatría en el Instituto Nacional de
 						Psiquiatría “Ramón de la Fuente” y avalada por la Universidad
 						Nacional Autónoma de México.</h4>
 					<h4>Alta Especialidad de Medicina del Sueño en el Instituto
 						Nacional de Psiquiatría “Ramón de la Fuente” y avalada por la
 						Universidad Nacional Autónoma de México.</h4>
+
 				</div>
 
-			</div>
+				<div class="col-sm-4 text-left">
 
-
-			<hr />
-			<div class="row">
-
-				<div class="col-sm-4">
 					<img class="img-thumbnail" alt="" th:src="@{/images/stanford.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
-
-					<h4>Certificación en Epidemiología de Medicina del Sueño en
-						Stanford Sleep Epidemiology Center.</h4>
+					<h4>Certificada por la Universidad de Stanford: Epidemiología
+						del Sueño en Epidemiology Sleep Research Center.</h4>
 
 				</div>
 
 			</div>
 
-
 			<hr />
 			<div class="row">
 
-				<div class="col-sm-4">
-					<img class="img-thumbnail" alt="" th:src="@{/images/diplomado.png}"
+				<div class="col-sm-3">
+					<img class="img-thumbnail" alt="" th:src="@{/images/ipcc.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
 
 					<h4>Diplomado de Terapia Cognitivo Conductual en Instituto
 						Mexicano de Psicoterapia Cognitivo Conductual, México, D.F.</h4>
-
 				</div>
+				<div class="col-sm-3">
 
-			</div>
-
-			<hr />
-			<div class="row">
-
-				<div class="col-sm-4">
-					<img class="img-thumbnail" alt="" th:src="@{/images/itesm.jpg}"
+					<img class="img-thumbnail" alt="" th:src="@{/images/itesm.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
 
 					<h4>Profesora del curso de posgrado de “Trastornos del Sueño”
 						para residentes en la especialidad de psiquiatría del Tecnológico
 						de Monterrey, desde 2017.</h4>
-
 				</div>
 
-			</div>
+				<div class="col-sm-3">
 
-
-			<hr />
-			<div class="row">
-
-				<div class="col-sm-4">
-					<img class="img-thumbnail" alt="" th:src="@{/images/apm.gif}"
+					<img class="img-thumbnail" alt="" th:src="@{/images/apm.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
 
 					<h4>Miembro de la Asociación Psiquiátrica Mexicana (APM) desde
 						2014 (SA40273)</h4>
 
 				</div>
 
-			</div>
+				<div class="col-sm-3">
 
-
-
-			<hr />
-			<div class="row">
-
-				<div class="col-sm-4">
 					<img class="img-thumbnail" alt="" th:src="@{/images/consejo.png}"
 						width="100%" />
-				</div>
-				<div class="col-sm-8">
 
 					<h4>Certificada por el Consejo Mexicano de Psiquiatría</h4>
 
@@ -162,13 +163,18 @@ h4 {
 			</div>
 
 
+			
+
 
 		</div>
+		
+		<div class="container" style="background-color: #214C68; padding-top: 20px; color: #fff; border-radius: 4px 4px 0px 0px;">
+			<footer class="container-fluid bg-4 text-center">
+				<p>Dra. Ruth Krisel Saldívar Hernández</p>
+			</footer>
+		</div>
 
-		<hr />
-		<footer class="container-fluid bg-4 text-center">
-			<p>Dra. Ruth Krisel Saldívar Hernández</p>
-		</footer>
+
 
 
 
